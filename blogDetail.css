@@ -1,0 +1,583 @@
+:root{
+    --color:#F1692F;
+    --font-family: "Roboto";
+}
+body{
+    font-family: var(--font-family) !important
+}
+/* ----------HEADER---------- */
+.header{
+    width: 100%;
+    height: 93px;
+    background-color: var(--color);
+    position: fixed;
+    z-index: 100;
+}
+.header .container-fluid .row>div{
+    height: 93px;
+}
+.header .container-fluid .logo img{
+    height: 93px;
+}
+
+.header .container-fluid .menu{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+.header .container-fluid .menu div{
+    color: white;
+    font-weight: 700;
+}
+.header .container-fluid .menu div .blog{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+.header .container-fluid .menu .dropdown .btn{
+    background-color: transparent !important;
+    border: none;
+    color: white;
+    font-weight: 700;
+}
+
+.header .container-fluid .login{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end
+}
+.header .container-fluid .login img{
+    height: 30px;
+}
+.header .container-fluid .login .btnLogin button{
+    color: #F1692F;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 25px;
+    margin-left: 30px;
+}
+
+.header .container-fluid .row .menuRepon{
+    display: none;
+}
+.header .container-fluid .row .menuRepon .dropdownMenu{
+    background-color: var(--color);
+}
+
+.header .container-fluid .row .menuRepon .dropdown .btn{
+    background-color: transparent !important;
+    border: none;
+    color: white;
+    font-weight: 700;
+}
+.header .container-fluid .row .menuRepon div .blog{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 6px 12px;
+}
+.header .container-fluid .login .iconLogin{
+    text-decoration: none;
+}
+.header .container-fluid .login .iconLogin i{
+    display: none;
+    color: white;
+    font-size: 40px;
+    margin: 0 40px 0 60px;
+}
+
+/* --------END HEADER---------- */
+
+/* -------------MAIN------------- */
+.main{
+    position: relative;
+    top: 93px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.main .search{
+    padding: 10px 100px;
+    display: flex;
+    align-items: center
+}
+.main .search>svg{
+    position: absolute;
+    margin-left: 20px;
+}
+.main .search>input{
+    width: 772px;
+    height: 43px;
+    border-radius: 21.5px;
+    border: 1px solid #818181;
+    background: #FFF;
+    padding: 0 70px;
+    color: #7C7C7C;
+    text-align: justify;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+.main .title{
+    margin-top: 22px;
+}
+.main .title ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.main .title ul li{
+    color: #F1692F;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+.main .title ul div{
+    width: 1px;
+    height: 48px;
+    background: #7E7E7E;
+    margin: 0 16.5px;
+}
+.main .blogDetail{
+    width: 100%;
+    margin-bottom: 55px;
+}
+.main .blogDetail .path{
+    color: #F1692F;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    height: 59px;
+    background: #F0F0F0;
+    padding: 18px 211px;
+}
+.main .blogDetail .content{
+    padding: 18px 211px;
+}
+.main .blogDetail .content .col-xxl-7{
+    margin-right: 100px;
+}
+.main .blogDetail .content .col-xxl-7 .banner{
+    width: 100%;
+    height: 463px;
+    border-radius: 20px;
+    background: #F1692F;
+    display: none;
+}
+.main .blogDetail .content .col-xxl-7 .title{
+    color: #F1692F;
+    font-size: 32px;
+    font-weight: 700;
+}
+.main .blogDetail .content .col-xxl-7 .gc{
+    width: 242px;
+    height: 7px;
+    border-radius: 7px;
+    background: #F1692F;
+    margin: 19px 0 40px 0;
+}
+.main .blogDetail .content .col-xxl-7 .contentDetail{
+    color: #000;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;
+}
+.main .blogDetail .content .col-xxl-7 .toContents{
+    width: 100%;
+    border-radius: 20px;
+    background: #F5F5F5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 40px 0;
+    padding: 33px;
+}
+.main .blogDetail .content .col-xxl-7 .toContents .titletoContents{
+    color: #F1692F;
+    font-size: 32px;
+    font-weight: 700;
+}
+.main .blogDetail .content .col-xxl-7 .toContents .listtoContents{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.main .blogDetail .content .col-xxl-7 .toContents .listtoContents li{
+    color: #000;
+    text-align: justify;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.main .blogDetail .content .col-xxl-7 .img{
+    width: 100%;
+    height: 450px;
+    background: #E87500;
+    margin: 50px 0;
+}
+
+/* .main .blogDetail .content .col-xxl-4{
+    position: fixed;
+    right: 0;
+} */
+.main .blogDetail .content .col-xxl-4 .banner{
+    width: 297px;
+    height: 446px;
+    background: #F1692F;
+}
+.main .blogDetail .content .col-xxl-4 .courses{
+    margin-top: 36px;
+}
+.main .blogDetail .content .col-xxl-4 .courses .titleCourse{
+    color: #F1692F;
+    font-size: 32px;
+    font-weight: 700;
+    border-bottom: 5px solid #F1692F;
+    width: 200px;
+    margin-bottom: 30px;
+}
+.main .blogDetail .content .col-xxl-4 .courses .course{
+    color: #000;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 438.188%;
+    border-bottom: 1px dotted #000;
+    width: 297px;
+}
+.main .blogDetail .content .col-xxl-4 .regisCourse{
+    margin-top: 50px;
+    width: 350px;
+    border-radius: 12px;
+    background: #E87500;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 24px 30px;
+}
+.main .blogDetail .content .col-xxl-4 .regisCourse .titleRegis{
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.main .blogDetail .content .col-xxl-4 .regisCourse .input{
+    display: flex;
+    flex-direction: column
+}
+.main .blogDetail .content .col-xxl-4 .regisCourse .input label{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.main .blogDetail .content .col-xxl-4 .regisCourse .input input{
+    border-radius: 3px;
+    border: 1px solid #FFC68B;
+    background: #FFF;
+    width: 100%;
+    height: 39px;
+    margin-bottom: 5px;
+}
+.main .blogDetail .content .col-xxl-4 .regisCourse .btn{
+    width: 100%;
+    margin-top: 20px;
+}
+.main .blogDetail .content .col-xxl-4 .regisCourse .btn button{
+    width: 152px;
+    height: 28px;
+    border-radius: 3px;
+    background: #282828;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+}
+.main .posts{
+    padding: 0 211px;
+    background: #F0F0F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .posts .title{
+    color: #F1692F;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    margin-top: 63px;
+}
+.main .posts .gc{
+    width: 242px;
+    height: 7px;
+    border-radius: 7px;
+    background: #F1692F;
+    margin-bottom: 48px;
+}
+.main .posts .row .img{
+    width: 100%;
+    height: 250px;
+    background: #E87500;
+    margin-bottom: 10px;
+}
+.main .posts .row .textTitle{
+    color: #F1692F;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+
+}
+.main .posts .row .textContent{
+    color: #000;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+
+}
+.main .posts .row .seeMore{
+    color: #F1692F;
+    text-align: justify;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    text-align: right;
+    margin-bottom: 69px;
+}
+.main .contentRepon{
+    display: none;
+}
+.main .posts .listBlog{
+    display: none;
+}
+/* -----------END MAIN------------- */
+
+/* -------------FOOTER------------- */
+.footer{
+    background: #3E3E3E;
+    width: 100%;
+    color: white;
+    margin-top: 99px;
+    padding-bottom: 30px;
+}
+.footer .container-fluid .row {
+    justify-content: center
+}
+.footer .container-fluid .row img{
+    width: 80%;
+}
+.footer .container-fluid .row .second{
+    display: none;
+}
+.footer .container-fluid .row .first{
+    display: block;
+}
+.footer .container-fluid .row>div{
+    margin-top: 49px;
+}
+.footer .container-fluid .row .title{
+    font-size: 32px;
+    font-weight: 700;
+}
+.footer .container-fluid .row .gc{
+    width: 83.944px;
+    height: 7px;
+    border-radius: 7px;
+    background: #FFF;
+    margin: 17px 0;
+}
+.footer .container-fluid .row .content{
+    color: #F5F5F5;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+/* -----------END FOOTER------------- */
+
+
+/* REPONSIVE */
+@media screen and (max-width:1080px) {
+    .header{    
+        height: 93px;
+    }
+    .header .container-fluid .row .menu{
+        display: none;
+    }
+    .header .container-fluid .row .menuRepon{
+        display: block;
+    }
+    .header .container-fluid .row .menuRepon .dropdownMenu{
+        display: none;
+    }
+    .header .container-fluid .row .menuRepon .icon i{
+        color: white;
+        font-size: 50px;
+        margin: 20px 0 0 20px;
+    }
+    /* .header .container-fluid .row .menuRepon.responsive{
+        position: relative;
+    } */
+    .header .container-fluid .row .responsive .icon {
+        position: absolute;
+    }
+    .header .container-fluid .row .responsive .dropdownMenu {
+        display: block;
+        position: relative;
+        top: 93px;
+    }
+    .header .container-fluid .login .iconLogin i{
+        display: block;
+    }
+    .header .container-fluid .login .btnLogin button{
+        display: none;
+    }
+    /*MAIN*/
+    .main .blogDetail .path{
+        display: none;
+    }
+    .main .blogDetail .content{
+        padding:5%;
+    }
+    .main .blogDetail .content .col-xxl-4{
+        display: none;
+    }
+    .main .blogDetail .content .col-xxl-7 .banner{
+        display: block;
+    }
+    .main .blogDetail .content .col-xxl-7 .title{
+        color: #F1692F;
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    .main .blogDetail .content .col-xxl-7 .gc{
+        display: none;
+    }
+    .main .blogDetail .content .col-xxl-7 .contentDetail{
+        color: #000;
+        text-align: justify;
+        font-size: 32px;
+        font-weight: 400;
+    }
+    .main .blogDetail .content .col-xxl-7 .toContents .titletoContents{
+        color: #F1692F;
+        font-size: 48px;
+        font-weight: 700;
+    }
+    .main .blogDetail .content .col-xxl-7 .toContents .listtoContents li{
+        color: #000;
+        text-align: justify;
+        font-size: 32px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    .main .blogDetail .content .col-xxl-7 .img{
+        display: none;
+    }
+    .main .blogDetail .content .col-xxl-7 .third{
+        display: none;
+    }
+    .main .posts{
+        padding: 5%;
+    }
+    .main .posts .listBlog{
+        display: block;
+    }
+    .main .posts .listBlog .blog{
+        display: flex;
+        align-items: center;
+        flex-direction: column
+    }
+    .main .posts .listBlog .blog .thumbnail{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .main .posts .listBlog .blog .thumbnail .thum{
+        width: 90%;
+        height: 463px;
+        border-radius: 20px;
+        flex-shrink: 0;
+        background: #D9D9D9;  
+        margin: 30px 20px;  
+    }
+    .main .posts .listBlog .blog .text{
+        margin-left: 20px;
+        width: 80%;
+    }
+    .main .posts .listBlog .blog .text .textTile{
+        color: #F1692F;
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .main .posts .listBlog .blog .text .textContent{
+        color: #000;
+        text-align: justify;
+        font-size: 32px;
+        font-weight: 400;
+    }
+    .main .posts .listBlog .blog .text .seeMore{
+        color: #F1692F;
+        text-align: justify;
+        font-size: 32px;
+        font-style: italic;
+        font-weight: 400;
+        text-align: right;
+    }
+    .main .posts .contentNoRepon{
+        display: none;
+    }
+    .main .regisCourse{
+        margin-top: 50px;
+        width: 50%;
+        border-radius: 12px;
+        background: #E87500;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        padding: 24px 30px;
+    }
+    .main .regisCourse .titleRegis{
+        color: #FFF;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .main .regisCourse .input{
+        display: flex;
+        flex-direction: column
+    }
+    .main .regisCourse .input label{
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+    .main .regisCourse .input input{
+        border-radius: 3px;
+        border: 1px solid #FFC68B;
+        background: #FFF;
+        width: 100%;
+        height: 39px;
+        margin-bottom: 5px;
+    }
+    .main .regisCourse .btn{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .main .regisCourse .btn button{
+        width: 152px;
+        height: 28px;
+        border-radius: 3px;
+        background: #282828;
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .main .regisCourse{
+        display: block;
+    }
+    /*FOOTER*/
+    .footer .container-fluid .row .first{
+        display: none;
+    }
+    .footer .container-fluid .row .second{
+        display: block;
+    }
+}

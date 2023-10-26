@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Detail</title>
+    <link rel="stylesheet" href="blogDetail.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xxl-1 col-lg-2 logo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <div class="col-xxl-9 menu">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                            KHÓA HỌC
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Link 1</a></li>
+                          <li><a class="dropdown-item" href="#">Link 2</a></li>
+                          <li><a class="dropdown-item" href="#">Link 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                            LỊCH ĐÀO TẠO
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Link 1</a></li>
+                          <li><a class="dropdown-item" href="#">Link 2</a></li>
+                          <li><a class="dropdown-item" href="#">Link 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                            DOANG NGHIỆP
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Link 1</a></li>
+                          <li><a class="dropdown-item" href="#">Link 2</a></li>
+                          <li><a class="dropdown-item" href="#">Link 3</a></li>
+                        </ul>
+                    </div>
+                    <div><a class="blog" href="">BLOG</a></div>
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                            VỀ CHÚNG TÔI
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Link 1</a></li>
+                          <li><a class="dropdown-item" href="#">Link 2</a></li>
+                          <li><a class="dropdown-item" href="#">Link 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menuRepon col-lg-6" id="myTopnav">
+                    <a href="javascript:void(0);" class="icon" onclick="menuRepon()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <div class="dropdownMenu">
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                                KHÓA HỌC
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Link 1</a></li>
+                              <li><a class="dropdown-item" href="#">Link 2</a></li>
+                              <li><a class="dropdown-item" href="#">Link 3</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                                LỊCH ĐÀO TẠO
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Link 1</a></li>
+                              <li><a class="dropdown-item" href="#">Link 2</a></li>
+                              <li><a class="dropdown-item" href="#">Link 3</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                                DOANG NGHIỆP
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Link 1</a></li>
+                              <li><a class="dropdown-item" href="#">Link 2</a></li>
+                              <li><a class="dropdown-item" href="#">Link 3</a></li>
+                            </ul>
+                        </div>
+                        <div><a class="blog" href="">BLOG</a></div>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                                VỀ CHÚNG TÔI
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Link 1</a></li>
+                              <li><a class="dropdown-item" href="#">Link 2</a></li>
+                              <li><a class="dropdown-item" href="#">Link 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-2 col-lg-4  login">
+                    <div>
+                        <img src="img/icon-search.png" alt="icon-search">
+                    </div>
+                    <div>
+                        <a class="btnLogin" href="">
+                            <button>Đăng nhập</button>
+                        </a>
+                        <a class="iconLogin" href="">
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 35 36" fill="none">
+                <path d="M15.7682 30.3853C23.5832 30.3853 29.9186 24.005 29.9186 16.1345C29.9186 8.26402 23.5832 1.88373 15.7682 1.88373C7.95323 1.88373 1.61792 8.26402 1.61792 16.1345C1.61792 24.005 7.95323 30.3853 15.7682 30.3853Z" stroke="#818080" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M33.4561 33.948L25.7618 26.1991" stroke="#818080" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <input type="text" placeholder="Tìm kiếm bài viết">
+        </div>
+        <div class="title">
+            <ul>
+                <li>Chia sẻ <br/> kinh nghiệm</li>
+                <div></div>
+                <li>Kiến thức <br/> chuyên môn</li>
+                <div></div>
+                <li>MCI Careers</li>
+                <div></div>
+                <li>Kinh nghiệm <br/> thực chiến</li>
+                <div></div>
+                <li>Lịch <br/> Khai Giảng</li>
+            </ul>
+        </div>
+        <div class="blogDetail">
+            <div class="path">Trang chủ > Blog > Chia sẻ kinh nghiệm > Bạn Nguyễn Quang Hưng - Học Data là 1 quá trình và mình đã vượt qua nó như nào</div>
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xxl-7">
+                            <div class="banner"></div>
+                            <div class="title">Bạn Nguyễn Quang Hưng - Học DATA là 1 quá trình và mình đã vượt qua nó như nào</div>
+                            <div class="gc"></div>
+                            <div class="contentDetail">
+                                Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ... 
+                                Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...
+                            </div>
+                            <div class="toContents">
+                                <div class="titletoContents">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="35" viewBox="0 0 48 35" fill="none">
+                                        <path d="M4 17.4697H44.4089" stroke="#F1692F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4 4H44.4089" stroke="#F1692F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4 30.9393H44.4089" stroke="#F1692F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Nội dung bài viết
+                                </div>
+                                <div class="listtoContents">
+                                    <ul>
+                                        <li type="1">Nội dung bài viết</li>
+                                        <li type="1">Nội dung bài viết</li>
+                                        <li type="1">Nội dung bài viết</li>
+                                        <li type="1">Nội dung bài viết</li>
+                                        <li type="1">Nội dung bài viết</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="contentDetail">
+                                Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ... 
+                                Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...<br/><br/>
+                                Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ... 
+                                Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...<br/><br/>
+                                Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ... 
+                                Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...<br/><br/>
+                            </div>
+                            <div class="img">
+
+                            </div>
+                            <div class="contentDetail third">
+                                Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ... 
+                                Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ... 
+                                Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ... 
+                                Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...<br/><br/>
+                                Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ... 
+                                Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...
+                            </div>
+                        </div>
+                        <div class="col-xxl-4">
+                            <div class="banner"></div>
+                            <div class="courses">
+                                <div class="titleCourse">Các khóa học</div>
+                                <div class="course">Phân tích dữ liệu</div>
+                                <div class="course">Kĩ sư dữ liệu</div>
+                                <div class="course">Khoa học dữ liệu </div>
+                                <div class="course">Lập trình ứng dụng</div>
+                            </div>
+                            <form class="regisCourse contentNoRepon">
+                                <div class="titleRegis">ĐĂNG KÝ TƯ VẤN<br/> KHÓA HỌC</div>
+                                <div class="input">
+                                    <label for="name">Họ và tên</label>
+                                    <input type="text" id="name">
+                                </div>
+                                <div class="input">
+                                    <label for="email">Email</label>
+                                    <input type="text" id="email">
+                                </div>
+                                <div class="input">
+                                    <label for="numPhone">Số điện thoại</label>
+                                    <input type="text" id="numPhone">
+                                </div>
+                                <div class="input">
+                                    <label for="course">Khóa học mà bạn muốn tư vấn</label>
+                                    <input type="text" id="course">
+                                </div>
+                                <div class="btn">
+                                    <button>ĐĂNG KÝ TƯ VẤN</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="posts">
+            
+            <div class="title">Các bài đăng liên quan</div>
+            <div class="gc"></div>
+            <div class="listBlog">
+                <div class="blog">
+                    <div class="thumbnail col-xl-4 col-gl-12">
+                        <div class="pre">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="23" viewBox="0 0 15 23" fill="none">
+                                <path d="M11.6042 20.25L2.85419 11.5L11.6042 2.75" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="thum"></div>
+                        <div class="next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                                <path d="M35 0H0V35H35V0Z" fill="white" fill-opacity="0.01"/>
+                                <path d="M12.3958 26.25L21.1458 17.5L12.3958 8.75" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text col-xl-8 col-gl-12">
+                        <div class="textTile">
+                            Bạn Nguyễn Quang Hưng - Học DATA là 1 quá trình và mình đã vượt qua nó như nào
+                        </div>
+                        <div class="textContent">
+                            Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...
+                        </div>
+                        <div class="seeMore">Xem thêm</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid contentNoRepon">
+                <div class="row">
+                    <div class="text col-xl-4 col-gl-12">
+                        <div class="img"></div>
+                        <div class="textTitle">
+                            Bạn Nguyễn Quang Hưng - Học DATA là 1 quá trình và mình đã vượt qua nó như nào
+                        </div>
+                        <div class="textContent">
+                            Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...
+                        </div>
+                        <div class="seeMore">Xem thêm</div>
+                    </div>
+                    <div class="text col-xl-4 col-gl-12">
+                        <div class="img"></div>
+                        <div class="textTitle">
+                            Bạn Nguyễn Quang Hưng - Học DATA là 1 quá trình và mình đã vượt qua nó như nào
+                        </div>
+                        <div class="textContent">
+                            Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...
+                        </div>
+                        <div class="seeMore">Xem thêm</div>
+                    </div>
+                    <div class="text col-xl-4 col-gl-12">
+                        <div class="img"></div>
+                        <div class="textTitle">
+                            Bạn Nguyễn Quang Hưng - Học DATA là 1 quá trình và mình đã vượt qua nó như nào
+                        </div>
+                        <div class="textContent">
+                            Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...
+                        </div>
+                        <div class="seeMore">Xem thêm</div>
+                    </div>
+                </div>
+            </div>
+            <form class="regisCourse contentRepon">
+                <div class="titleRegis">ĐĂNG KÝ TƯ VẤN<br/> KHÓA HỌC</div>
+                <div class="input">
+                    <label for="name">Họ và tên</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="input">
+                    <label for="email">Email</label>
+                    <input type="text" id="email">
+                </div>
+                <div class="input">
+                    <label for="numPhone">Số điện thoại</label>
+                    <input type="text" id="numPhone">
+                </div>
+                <div class="input">
+                    <label for="course">Khóa học mà bạn muốn tư vấn</label>
+                    <input type="text" id="course">
+                </div>
+                <div class="btn">
+                    <button>ĐĂNG KÝ TƯ VẤN</button>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+    <div class="footer">
+         <div class="container-fluid">
+            <div class="row">
+                <div class="col-xxl-4 col-lg-5 first"><img src="img/banner_footer.png" alt="banner_footer"></div>
+                <div class="col-xxl-2 col-lg-5">
+                    <div class="title">HÀ NỘI</div>
+                    <div class="gc"></div>
+                    <div class="content">
+                        <b>165 Thái Hà</b><br/> 
+                        <b>Hotline:</b> 024 7106 8368<br/> 
+                        <b>Địa chỉ:</b> Tầng 6, Số 5, Ngách 23, Ngõ 165 Thái Hà, Phường Láng Hạ, Quận Đống Đa, Thành phố Hà Nội, Việt Nam
+                        <br/> <br/>
+                        <b>30 Trung Liệt</b><br/> 
+                        <b>Hotline:</b> 024 7106 8368<br/> 
+                        <b>Địa chỉ:</b> Số 30, Trung Liệt, Phường Trung Liệt, Quận Đống Đa, Thành phố Hà Nội, Việt Nam
+                    </div>
+                </div>
+                <div class="col-xxl-2 col-lg-5">
+                    <div class="title">HỒ CHÍ MINH</div>
+                    <div class="gc"></div>
+                    <div class="content">
+                        <b>HCM - 13 Cao Thắng</b><br/> 
+                        <b>Hotline:</b> 024 7106 8368<br/> 
+                        <b>Địa chỉ:</b> 13 Cao Thắng, Phường 2, Quận 3, Thành Phố Hồ Chí Minh
+                        <br/> <br/>
+                        <b>HCM - 224 Điện Biên Phủ</b><br/> 
+                        <b>Hotline:</b> 024 7106 8368<br/> 
+                        <b>Địa chỉ:</b> Tầng 4 & Tầng 6, 224 Điện Biên Phủ, Phường Võ Thị Sáu, Quận 3, Thành phố Hồ Chí Minh, Việt Nam
+                        <br/> <br/>
+                        <b>HCM - 677/6 Điện Biên Phủ</b><br/> 
+                        <b>Hotline:</b> 024 7106 8368<br/> 
+                        <b>Địa chỉ:</b> Tầng 4, Yoko Building 677/6, Điện Biên Phủ, Phường 25, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam
+                    </div>
+                </div>
+                <div class="col-xxl-2 col-lg-5">
+                    <div class="title">HOTLINE</div>
+                    <div class="gc"></div>
+                    <div class="content">
+                        Khiếu nại CEO: 0982 521 378<br/>
+                        Khiếu nại DCEO: 0916 442 368<br/>
+                        Hợp tác truyền thông: 0934 146 016<br/>
+                        Hợp tác kinh doanh: 0961 123 988<br/>
+                        Khiếu nại dịch vụ CSKH: 024 7106 8368<br/>
+                        Tư vấn khóa học 1<br/>
+                        Ms. Khánh Ly 0352 433 233<br/>
+                        Tư vấn khóa học 2<br/>
+                        Ms. Ngọc Linh 0344 463 698<br/>
+                        CSKH: cskh@mcivietnam.com<br/>
+                        Chính sách bảo mật
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-lg-5 second"><img src="img/banner_footer.png" alt="banner_footer"></div>
+
+            </div>
+         </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
